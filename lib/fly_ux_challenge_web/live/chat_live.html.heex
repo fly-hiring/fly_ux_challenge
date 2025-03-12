@@ -1,0 +1,41 @@
+<div id="chat-container">
+  <div id="chat-messages">
+    <%= for message <- @messages do %>
+      <div class={"message " <> message.role}>
+        <strong>{message.role |> to_string() |> String.capitalize()}:</strong>
+        <pre><%= message.content %></pre>
+      </div>
+    <% end %>
+  </div>
+
+  <div id="chat-form">
+    <form phx-submit="submit">
+      <input
+        type="text"
+        name="message"
+        value={@message}
+        phx-change="change"
+        placeholder="Type your message..."
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<div id="candidate-instructions">
+  <h2>Candidate Instructions</h2>
+  <p>
+    This is a stubbed chat interface. Your task is to:
+  </p>
+  <ol>
+    <li>
+      Replace the <code>FlyUxChallenge.ChatAPI</code>
+      module with actual calls to an LLM API of your choice.
+    </li>
+    <li>Update this simple interface to be a polished LiveView chat experience.</li>
+    <li>Implement streaming responses using the <code>stream_message/1</code> function.</li>
+  </ol>
+  <p>
+    Good luck!
+  </p>
+</div>
