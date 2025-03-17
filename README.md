@@ -18,11 +18,6 @@ You are provided with a basic Phoenix application that includes:
    - Add proper styling and UX improvements
    - Ensure the UI is responsive and accessible
 
-3. **Bonus (Optional)**: 
-   - Add a chat history feature
-   - Add the ability to change LLM models or parameters
-   - Implement message markdown rendering
-
 ## Getting Started
 
 1. Clone this repository
@@ -30,19 +25,14 @@ You are provided with a basic Phoenix application that includes:
 3. Start the Phoenix server with `mix phx.server`
 4. Visit [`localhost:4000`](http://localhost:4000) in your browser
 
-## Evaluation Criteria
+## What We're Looking For
 
-You will be evaluated on:
+By this point, you've talked to us about how you make product decisions. This project is a sample of what we think you'll need to do this job well. We're interested in seeing your approach to problem-solving, how you make technical and design choices, and how you balance functionality with user experience.
 
-1. **Code Quality**: Clean, maintainable Elixir code
-2. **LiveView Usage**: Proper use of LiveView features and patterns
-3. **UX Design**: Intuitiveness and polish of your interface
-4. **LLM Integration**: How well you integrated with an LLM API
+There's no single "right" way to complete this challenge. Rather than giving you a checklist, we want to see how you prioritize and implement features that create a compelling, usable product.
 
 ## Submission
 
 Please create a Git repository with your solution and share it with us. Include instructions on how to set up and run your solution, including any environment variables needed for the LLM API.
 
 Good luck!
-
-
